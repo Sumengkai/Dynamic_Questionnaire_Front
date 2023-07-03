@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/questionnaire/questionnaire.css" />
+    <script src="/jquery.min.js" defer></script>
+    <script src="/chart.umd.min.js" defer></script>
+    <script src="/ajax-backstage.js" defer></script>
+    <script src="/questionnaire/ajax-questionnaire.js" defer></script>
+    <script src="/Revisebackstage/Revisebackstage.js" defer></script>
+    <title>ReviseQuestionnaire</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="window.location.href='http://127.0.0.1:5502/backstage.html'">後台列表首頁</button>
+        <p>後台問卷管理</p>
+
+    </div>
+    <span id="tab-1"></span>
+    <span id="tab-2"></span>
+    <span id="tab-3"></span>
+    <span id="tab-4"></span>
+
+    <!-- 頁籤按鈕 -->
+    <div id="tab">
+        <ul>
+            <li><a href="#tab-1">問卷</a></li>
+            <li><a href="#tab-2">題目</a></li>
+            <li><a href="#tab-3">問卷回饋</a></li>
+            <li><a href="#tab-4">統計</a></li>
+        </ul>
+
+        <!-- 頁籤的內容區塊 -->
+        <div class="tab-content-1">
+            <form id="form11" action="http://127.0.0.1:5502/Revisebackstage/Revisebackstage.html#tab-2" method="get">
+                <p class="pp" type="問卷名稱">問卷名稱 : <input id="queName" class="inp" placeholder="請輸入名稱....."
+                        required /></input></p>
+                <textarea name="textarea1" id="textName" cols="40" rows="19" required></textarea>
+                <!-- <p class="pp" type="問卷名稱">描述 : <input id="textName" class="inp" placeholder="請輸入名稱....."required /></input></p> -->
+                <p class="p2" type="開始:">開始時間 : <input type="date" id="strDate" value="" min="new Date" max=""
+                        required></input></p>
+                <p class="p2" type="結束:">結束時間 : <input type="date" id="endDate" value="" min="2000-01-01" max=""
+                        required></input></p>
+                <button id="changeIntCreate" class="change-intCreate1">確認修改</button>
+                <input type="reset" value="清除"></input>
+            </form>
+        </div>
+        <div class="tab-content-2">
+            <form id="question-form" action="">
+                <div id="show">
+                    <br>
+                    <label for="tab2Question">問題 : </label>
+                    <input id="tab2Question" class="e-qus" placeholder="請輸入問題....." /></input>
+                    <select name="options1" id="sel11">
+                        <option value="false">單選方塊</option>
+                        <option value="true">複選方塊</option>
+                    </select>
+                    <input type="checkbox" name="check1" id="check123">必填 <br>
+                    <label for="epNameOptions">選項 : </label>
+                    <input id="epNameOptions" class="e-op" placeholder="請輸入選項....." />多個答案以 ; 分隔</input>
+                    <button id="changeIntCreate2" class="change-intCreate2">新增</button>
+                    <button id="intRevise" class="int-revise">編輯</button>
+                </div>
+            </form>
+            <br>
+            <form action="">
+                <button class="deleteBtn" id="deleteQusBtn"><img src="/src/image/delete.png" alt=""></button>
+                <table id="question-list">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>問題</th>
+                            <th>種類</th>
+                            <th>必填</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <!-- <tr id="question-list">
+                    </tr> -->
+                </table>
+                <br>
+                <button id="changeIntCreate3" class="change-intCreate3">確認修改</button>
+                <!-- <input id="remove" type="reset" value="清除"></input> -->
+            </form>
+        </div>
+
+        <div class="tab-content-3">
+            <br />
+            <div id="testtesttt">
+                <br />
+                <table id="tab3feedBack" class="tab3feedBack">
+
+                </table>
+                <div class="page_btnForPeople" id="page_btnForPeople"></div>
+
+
+            </div>
+            <div class="tab-content-3-3" id="userInfo">
+                <div id="users-name">
+                    <p1>姓名&nbsp;&nbsp;&nbsp;&emsp;: <input type="text" id="userName" disabled></p>
+                        <p1>性別&nbsp;&nbsp;&nbsp;&emsp;: <input type="text" id="userGender" disabled></p>
+                            <p1>手機&nbsp;&nbsp;&nbsp;&emsp;: <input type="text" id="userPhone" disabled></p>
+                                <p1>⛄E-mail : <input type="text" id="userEmail" disabled></p>
+                                    <p1>⛄年齡 : <input type="text" id="userAge" disabled></p>
+                                        <p1>問卷名稱&nbsp;&nbsp;&nbsp;&emsp;: <input type="text" id="qName" disabled>
+                                            </p>
+                                            <p1>完成時間&nbsp;&nbsp;&nbsp;&emsp;: <input type="text" id="userFinish"
+                                                    disabled>
+                                                </p>
+
+                </div>
+                <br />
+
+                <div id="topic1">
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-content-4" id="tab4statistics">
+            <!-- <canvas id="myChart"></canvas>
+            <canvas id="myChart1"></canvas> -->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

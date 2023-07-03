@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/backstage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <script src="User-Ajax.js" defer></script>
+    <script src="User-Ready.js" defer></script>
+    <!-- <script src="/ajax-backstage.js" defer></script>
+    <script src="/backstage.js" defer></script>
+    <script src="/questionnaire/questionnaire.js" defer></script>
+    <script src="/appenBackstage.js" defer></script>  -->
+    <title>使用者畫面</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <div class="btn-li">
+            <button onclick="window.location.href='http://127.0.0.1:5502/backstage.html'">後台列表首頁</button>
+            <!-- <button><a href="http://127.0.0.1:5502/questionnaire/questionnaire.html">問卷</a></button> -->
+            <button onclick=" window.location.href='http://127.0.0.1:5502/questionnaire/questionnaire.html'">問卷</button>
+        </div>
+    </nav>
+
+    <div>
+        <div class=" form-border">
+            <form action="backstage.html">
+                <p class="p1">問卷管理</p>
+                <div>
+                    <p class="p2" type="問卷標題:">問卷標題<input type="search" id="queTitleBackstage" class="qq"
+                            placeholder="請搜尋問卷." /></input></p>
+                    <p class="p2" type="開始:">開始 / 結束<input id="startDateSearcah" type="date" value="" min="2000-01-01"
+                            max="2030-12-31"></input>
+                        <input type="date" id="endDateSearch" value="" min="2000-01-01" max="2030-12-31"></input>
+                    </p>
+                    <button class="search-btn" id="searchQusBackstage">搜尋</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="list-wrapper">
+                    <table id="table1" class="td1">
+                    </table>
+                </div>
+                <div class="page_btn">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div class="btnClass">
+        <button class="deleteBtn" id="deleteHomePage"><img src="/src/image/delete.png" alt=""></button>
+        <button onclick="window.location.href='http://127.0.0.1:5502/questionnaire/questionnaire.html'" class="addBtn"
+            id="addQus1"><img src="/src/image/add.png" alt=""></button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="page-icon" id="pagination-container">
+    </div>
+
+    <div id="pagination"></div>
+
+</body>
+
+</html>

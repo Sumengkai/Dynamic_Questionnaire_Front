@@ -1,0 +1,176 @@
+html {
+  background-image: url(/src/image/4.jpg);
+  background-size: cover;
+}
+.btn-li {
+  display: flex;
+  align-items: center;
+}
+.form-border {
+  border: 1px solid rgb(214, 214, 214);
+  font-family: monospace;
+  color: #373737;
+  letter-spacing: 7px;
+  border-style: hidden;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  height: 180px;
+  border-radius: 10px;
+  padding-top: 5px;
+  vertical-align: middle;
+  justify-items: center;
+  font-weight: bolder;
+}
+.td1 {
+  border: none;
+  border: 1px solid hidden;
+  border-collapse: separate;
+  border-spacing: 0px;
+  /* display: block; */
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  transform: translate(-20%, -0%); */
+  margin: auto;
+  color: rgb(63, 63, 63);
+  border-radius: 10px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+.td1:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+th {
+  border: 1px solid #6c6c6d;
+  width: 50px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #6c6c6d;
+  color: rgb(255, 255, 255);
+}
+td {
+  border: 1px solid #000;
+  background-color: rgb(255, 255, 255);
+}
+table {
+  /* border: 1px solid #000; */
+}
+.btnClass {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: -30px;
+  padding-left: 170px;
+}
+.deleteBtn {
+  margin-right: 20px;
+}
+.test123456 {
+  text-decoration: UNDERLINE;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  cursor: pointer;
+}
+.list-item {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  text-align: left;
+}
+#table_id_next {
+  background-color: rgb(255, 255, 255);
+}
+#table_id_previous {
+  background-color: rgb(255, 255, 255);
+}
+.paginate_button {
+  background-color: rgb(255, 255, 255);
+}
+span {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(207, 205, 205);
+  text-align: center;
+  padding-left: 7px;
+  line-height: 30px;
+  margin-left: 1px;
+  border-radius: 20%;
+}
+span,
+a {
+  background-color:turquoise;
+  width:30px;
+ 
+  border:1px solid;
+  margin:10px;
+  line-height: 50px;
+  text-align: center;
+}
+.page-btn {
+  cursor: pointer;
+}
+.page_btn span:hover {
+  background: #444;
+  color: red;
+  border-radius:10rem;
+}
+.page-btn span {
+  background-color:turquoise;
+  width:30px;
+  border:1px solid;
+  margin:10px;
+  line-height: 30px;
+  text-align: center;
+}
+/* ---------------------------------------- */
+/*設置div樣式的整體佈局*/
+.page-icon {
+  margin: 20px 0 0 0; /*設置距離頂部20像素*/
+  font-size: 0; /*修復行內元素之間空隙間隔*/
+  text-align: center; /*設置內容居中顯示*/
+}
+
+/*設置共有的的樣式佈局，主要是進行代碼優化，提高運行效率*/
+.page-icon a,
+.page-disabled,
+.page-next {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 4px 10px 5px;
+  font-size: 14px; /*修復行內元素之間空隙間隔*/
+  margin-right: 10px;
+}
+
+/*對 a 標籤進行樣式佈局 */
+.page-icon a {
+  text-decoration: none; /*取消鏈接的下劃線*/
+  color: #005aa0;
+  background-color: rgb(255, 255, 255);
+}
+
+.page-current {
+  color: #ff6600;
+  padding: 4px 10px 5px;
+  font-size: 14px; /*修復行內元素之間空隙間隔*/
+}
+
+.page-disabled {
+  color: #005aa0;
+  background-color: rgb(255, 255, 255);
+}
+
+.page-next i,
+.page-disabled i {
+  cursor: pointer; /*設置鼠標經過時的顯示狀態，這裏設置的是顯示狀態爲小手狀態*/
+  display: inline-block; /*設置顯示的方式爲行內塊元素*/
+  width: 5px;
+  height: 9px;
+}
+.page-disabled i {
+  background-position: -80px -608px;
+  margin-right: 3px;
+}
+
+.page-next i {
+  background-position: -62px -608px;
+  margin-left: 3px;
+}
